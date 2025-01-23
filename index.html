@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which cat should you choose?</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <h1>Which cat should you choose?</h1>
+    <div class="images">
+        <img src="cat1.jpg" width="200px" alt="Cat 1">
+        <img src="cat2.jpg" width="200px" alt="Cat 2">
+        <img src="cat3.jpg" width="200px" alt="Cat 3">
+   
+    </div>
+    
+    <h1>Cat Preference Survey</h1>
+    <form id="catForm">
+        
+        <p>1. Do you enjoy playing games?</p>
+        <input type="radio" name="playful" value="Yes" required> Yes<br>
+        <input type="radio" name="playful" value="No"> No<br>
+  
+       
+        <p>2. Should the cat have long or short fur?</p>
+        <input type="radio" name="fur" value="Long" required> Long<br>
+        <input type="radio" name="fur" value="Short"> Short<br>
+        <input type="radio" name ="fur"value ="Hairless"> Hairless<br>
+   
+        
+        <p>3. Do you prefer a purebred or a mixed breed?</p>
+        <input type="radio" name="breed" value="Purebred" required> Purebred<br>
+        <input type="radio" name="breed" value="Mixed"> Mixed<br>
+    </form>
+
+    <button type="button" onclick="showResult()">Show Result</button>
+    <div id="result"></div>
+    <a id="wikiLink" href="https://en.wikipedia.org/wiki/Cat" target="_blank">Still not sure? Learn more about cats here!</a>
+</body>
+</html>
